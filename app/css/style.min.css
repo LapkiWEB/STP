@@ -6,6 +6,13 @@ body {
   display: swap;
 }
 
+.header__phone {
+  font-family: "Acrom", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  display: swap;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -72,6 +79,8 @@ body {
   position: relative;
   margin: 0 auto;
   background-color: #f5f5f5;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .wrapper {
@@ -98,8 +107,14 @@ body {
 }
 
 .container {
+  max-width: 1562px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container-full {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .title {
@@ -133,4 +148,142 @@ body {
   src: local("Acrom Medium"), local("Acrom-Medium"), url("../fonts/Acrom-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom-Medium.woff2") format("woff2"), url("../fonts/Acrom-Medium.woff") format("woff"), url("../fonts/Acrom-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+}
+.header {
+  padding: 15px;
+  max-width: 1756px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 470px;
+  width: 100%;
+}
+
+.header__work {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.menu__list {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.menu__list:hover {
+  color: #1C94D2;
+  border-bottom: 2px solid #1C94D2;
+}
+.menu__list + .menu__list {
+  margin-left: 40px;
+}
+
+.menu__list-hover {
+  position: relative;
+  cursor: pointer;
+}
+.menu__list-hover:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 0px;
+  padding-top: 30px !important;
+  display: none;
+}
+
+.sub-menu__list {
+  margin-bottom: 15px;
+  color: #000;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.sub-menu__list:hover {
+  color: #1C94D2;
+  border-bottom: 2px solid #1C94D2;
+}
+
+.social__list {
+  display: inline-block;
+  padding: 10px 10px 5px 10px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+.social__list + .social__list {
+  margin-left: 25px;
+}
+.social__list:hover {
+  background-color: #fff;
+  border: 2px solid #1C94D2;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.social__img {
+  width: 25px;
+  height: 25px;
+}
+
+.header__phone {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #1C94D2;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+}
+.header__phone:hover {
+  background-color: #fff;
+  border: 2px solid #1C94D2;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }

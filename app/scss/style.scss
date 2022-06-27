@@ -4,7 +4,144 @@
 @import 'fonts';
 
 // start header
+.header {
+  padding: 15px;
+  max-width: 1756px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 470px;
+  width: 100%;
+}
+
+.header__work {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.menu__list {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s;
+  &:hover {
+    color: $blue;
+    border-bottom: 2px solid $blue;
+  }
+  &+.menu__list {
+    margin-left: 40px;
+  }
+}
+
+.menu__list-hover {
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .sub-menu {
+      display: block;
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  top: 0px;
+  padding-top: 30px !important;
+  display: none;
+}
+.sub-menu__list {
+  margin-bottom: 15px;
+  color: #000;
+  border-bottom: 2px solid transparent;
+  transition: all .3s;
+  width: fit-content;
+  &:hover {
+    color: $blue;
+    border-bottom: 2px solid $blue;
+  }
+}
+
+.social__list {
+  display: inline-block;
+  &+.social__list {
+    margin-left: 25px;
+  }
+  padding: 10px 10px 5px 10px;
+  transition: all .3s;
+  border: 2px solid transparent;
+  &:hover {
+    background-color: #fff;
+    border: 2px solid $blue;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+  }
+}
+
+.social__img {
+  width: 25px;
+  height: 25px;
+}
+
+.header__phone {
+  @extend %Acrom-Bold;
+  transition: all .3s;
+  color: $blue;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+
+  &:hover {
+    background-color: #fff;
+    border: 2px solid $blue;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+  }
+}
 
 // end header
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';
