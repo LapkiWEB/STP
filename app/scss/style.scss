@@ -124,14 +124,14 @@
 // start section screen
 
 .screen{
-  height: 870px;
+  // height: 870px;
 }
 .screen__wrapper{
   display: flex;
   justify-content: space-between;
 }
 .screen__left{
-  max-width: 870px;
+  width: 870px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -141,9 +141,9 @@
      position: absolute;
      content: '';
      width: 479px;
-     height: 763px;
-     background-image: url(../images/content/screen__bg.png);
-     // top: 0;
+
+    height: 763px;
+     background-image: url('../images/content/screen__bg.png');
      bottom: 0;
      left: 0;
      background-repeat: no-repeat;
@@ -167,7 +167,7 @@
   letter-spacing: 0.05em;
   max-width: 750px;
   width: 100%;
- 
+ padding: 15px 0;
  
 }
 
@@ -186,7 +186,30 @@
 
 
 
+// start section numbers
+.numbers{
+background-color: $light-blue;
+}
+.numbers__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.numbers__numbers{
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 96px;
+  @extend %Acrom-Bold;
+  color: $blue;
+}
+.numbers__text{
+  @extend %Acrom-Regular;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
 
+
+// end section numbers
 
 
 
