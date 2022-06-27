@@ -1,4 +1,4 @@
-.title, html,
+.screen__title, .title, html,
 body {
   font-family: "Acrom", sans-serif;
   font-weight: normal;
@@ -208,6 +208,7 @@ body {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  text-transform: uppercase;
 }
 .menu__list:hover {
   color: #1C94D2;
@@ -286,4 +287,75 @@ body {
   border-radius: 5px;
   -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.screen {
+  height: 870px;
+}
+
+.screen__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.screen__left {
+  max-width: 870px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.screen__left::before {
+  position: absolute;
+  content: "";
+  width: 479px;
+  height: 763px;
+  background-image: url(../images/content/screen__bg.png);
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.screen__right {
+  max-width: 1050px;
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+.screen__right img {
+  border-radius: 5px;
+}
+
+.screen__title {
+  font-size: 48px;
+  line-height: 68px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  max-width: 750px;
+  width: 100%;
+}
+
+.screen__pink {
+  color: #E52179;
+}
+
+.screen__green {
+  color: #A6CE38;
+}
+
+.screen__blue {
+  color: #00BDEF;
 }

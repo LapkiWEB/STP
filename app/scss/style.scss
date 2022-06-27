@@ -43,6 +43,7 @@
   line-height: 17px;
   border-bottom: 2px solid transparent;
   transition: all .3s;
+  text-transform: uppercase;
   &:hover {
     color: $blue;
     border-bottom: 2px solid $blue;
@@ -120,7 +121,68 @@
 
 
 
+// start section screen
 
+.screen{
+  height: 870px;
+}
+.screen__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.screen__left{
+  max-width: 870px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+   &::before {
+     position: absolute;
+     content: '';
+     width: 479px;
+     height: 763px;
+     background-image: url(../images/content/screen__bg.png);
+     // top: 0;
+     bottom: 0;
+     left: 0;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+   }
+}
+.screen__right{
+  max-width: 1050px;
+  width: 100%;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+  img{
+    border-radius: 5px;
+  }
+}
+.screen__title{
+  @extend %Acrom-Regular;
+  font-size: 48px;
+  line-height: 68px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  max-width: 750px;
+  width: 100%;
+ 
+ 
+}
+
+.screen__pink {
+  color: $pink;
+}
+
+.screen__green {
+  color: $green;
+}
+
+.screen__blue {
+  color: #00BDEF;
+}
+// end section screen
 
 
 
