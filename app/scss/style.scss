@@ -46,7 +46,9 @@
   font-size: 14px;
   line-height: 17px;
 }
-
+// .menu{
+//   z-index: 110;
+// }
 .menu__list {
   display: inline-block;
   font-size: 14px;
@@ -62,35 +64,42 @@
   &+.menu__list {
     margin-left: 40px;
   }
-  &::before {
-    position: absolute;
-    content: "";
-    top: 7px;
-    right: -17px;
-    width: 12px;
-    height: 7px;
-    background-image: url('../images/icons/arrows__bottom.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+
 }
 
 .menu__list-hover {
   position: relative;
   cursor: pointer;
+  z-index: 10;
   &:hover {
     .sub-menu {
       display: block;
     }
   }
+    &::before {
+      position: absolute;
+      content: "";
+      top: 7px;
+      right: -17px;
+      width: 12px;
+      height: 7px;
+      background-image: url('../images/icons/arrows__bottom.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
 }
 
 .sub-menu {
   position: absolute;
-  top: 0px;
-  padding-top: 38px !important;
+  top: 24px;
+  left: -10px;
+  padding: 15px 10px 0 !important;
   display: none;
+  z-index: 1;
+  background-color: $background;
+    border-radius: 5px !important;
+    margin-bottom: 0;
 }
 .sub-menu__list {
   margin-bottom: 15px;
@@ -98,6 +107,8 @@
   border-bottom: 2px solid transparent;
   transition: all .3s;
   width: fit-content;
+  // padding: 0 10px;
+
   &:hover {
     color: $blue;
     border-bottom: 2px solid $blue;
@@ -148,27 +159,28 @@
 // start section screen
 
 .screen{
-  // height: 870px;
+  
 }
 .screen__wrapper{
   display: flex;
   justify-content: space-between;
+  height: 870px;
 }
 .screen__left{
-  width: 870px;
-  width: 100%;
+  min-width: 840px;
+  // width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+   padding: 0px 15px;
    &::before {
      position: absolute;
      content: '';
      width: 479px;
-
     height: 763px;
      background-image: url('../images/content/screen__bg.png');
-     bottom: 0;
+    top: 0;
      left: 0;
      background-repeat: no-repeat;
      background-size: cover;
@@ -181,7 +193,12 @@
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
   img{
     border-radius: 5px;
+    height: 100%;
   }
+  background-image: url('../images/content/screen__img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .screen__title{
   @extend %Acrom-Regular;
@@ -190,8 +207,8 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   max-width: 750px;
-  width: 100%;
- padding: 15px 0;
+  // width: 100%;
+
  
 }
 
