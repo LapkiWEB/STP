@@ -1,3 +1,158 @@
-// @media(max-width: 1900px){
+@media(max-width: 1550px) {
+  .header__right {
+    max-width: 410px;
+  }
 
-// }
+  .logo {
+    width: 120px;
+    height: 40px;
+  }
+
+  .header__left {
+    max-width: 370px;
+  }
+}
+
+@media(max-width: 1500px) {
+  .menu__btn {
+    display: block;
+    position: relative;
+  }
+
+  .header__right {
+    margin-left: auto;
+    padding-right: 20px;
+    max-width: 440px;
+  }
+
+  .menu__wrapper {
+    padding-left: 20px !important;
+  }
+
+  .menu {
+    display: none;
+
+    &.active {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: 480px;
+      height: 100vh;
+      background-color: #fff;
+      padding: 60px 0 0px 50px;
+      display: flex;
+      align-items: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  .mob__wrapper {
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 30px;
+  }
+
+  .menu__list {
+    display: block;
+    margin-bottom: 15px;
+
+    &+.menu__list {
+      margin-left: 0;
+    }
+  }
+
+  .menu__list-hover {
+    border: none;
+    padding-right: 17px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 7px;
+      right: 0px;
+      width: 12px;
+      height: 7px;
+      background-image: url('../images/icons/arrows__bottom.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &:hover {
+      border: none;
+      .sub-menu.active {
+        display: block;
+      }
+    }
+  }
+
+  .sub-menu {
+    position: static;
+    height: auto;
+    padding-top: 15px !important;
+  }
+
+
+  .social-mob {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .header__phone-mob {
+    display: block;
+    width: fit-content;
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+@media(max-width: 900px) {
+  .header__work {
+    display: none;
+  }
+
+  .header__left {
+    width: fit-content;
+  }
+
+}
+
+@media(max-width: 700px) {
+  .header__right {
+    width: fit-content;
+
+    .social {
+      display: none;
+    }
+  }
+
+  .header__phone {
+    padding: 0;
+  }
+}
+
+@media(max-width: 650px) {
+  .menu.active {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media(max-width: 450px) {
+
+  .header__phone {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 8px;
+  }
+}
+
+@media(max-width: 380px) {
+  .logo {
+    width: 90px;
+    height: 30px;
+  }
+}

@@ -50,3 +50,66 @@ body {
 .section{
   padding: 50px 0;
 }
+
+
+
+// СТАРТ МЕНЮШКА ПРИ АДАПТИВЕ
+.menu__btn {
+  width: 30px;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
+
+  &.active {
+    .row {
+      height: 3px;
+      width: 30px;
+    }
+
+    .row1 {
+      transform: rotate(45deg);
+      position: relative;
+      top: 5px;
+      background-color: $blue;
+      transition: all .5s ease 0s;
+    }
+
+    .row2 {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -4px;
+      background-color: $blue;
+      transition: all .5s ease 0s;
+    }
+
+    .row3 {
+      display: none;
+    }
+  }
+}
+
+.row {
+  background-color: $blue;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  transition: all .3s;
+}
+
+.row3 {
+  width: 20px;
+  margin-left: auto;
+}
+
+
+.social-mob {
+  display: none;
+}
+
+.header__phone-mob {
+  display: none;
+}
+
+// ФИНИШ МЕНЮШКА ПРИ АДАПТИВЕ
