@@ -323,7 +323,40 @@ background-color: $light-blue;
 // end section about
 
 
+// start section leader
 
+.leader__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.leader__item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.leader__box{
+  max-width: 300px;
+  width: 100%;
+  padding-right: 14px;
+}
+.leader__box-name{
+margin-bottom: 30px;
+}
+.leader__box-function{
+  font-size: 16px;
+  line-height: 19px;
+}
+.leader__item-img{
+  width: 440px;
+  height: 470px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  margin-right: 30px;
+}
+
+
+
+// end section leader
 
 
 
