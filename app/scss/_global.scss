@@ -47,10 +47,28 @@ body {
   max-width: fit-content;
 }
 
-.section{
+.section {
   padding: 50px 0;
 }
 
+
+.main__btn {
+  @extend %Acrom-Bold;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 10px 27px;
+  border-radius: 5px;
+  background-color: $blue;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all .3s;
+   border: 1px solid $blue;
+  &:hover{
+    color: $blue;
+    background-color: #fff;
+    border: 1px solid $blue;
+  }
+}
 
 
 // СТАРТ МЕНЮШКА ПРИ АДАПТИВЕ
