@@ -40,10 +40,11 @@ body {
   @extend %Acrom-Regular;
   font-size: 36px;
   line-height: 43px;
+  text-transform: uppercase;
   // padding: 0px 35px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   max-width: fit-content;
 }
 .subtitle{

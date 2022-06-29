@@ -485,7 +485,47 @@ position: relative;
 
 
 
+// start section company
 
+.company__wrapper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.company__box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 850px;
+  width: 100%;
+}
+.company__inner{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.company__item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company__inners{
+  padding-left: 130px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+// end section company
 
 
 
