@@ -426,9 +426,11 @@
   border-radius: 5px;
   transition: all .1s;
   // padding-top: 30px;
-position: relative;
+  position: relative;
+
   &:hover {
-        //  border: 3px solid $blue;
+
+    //  border: 3px solid $blue;
     // padding-top: 30px;
     .products__bg {
       // opacity: 0;
@@ -436,7 +438,7 @@ position: relative;
       top: 30px;
       bottom: auto;
       height: auto;
- 
+
     }
 
   }
@@ -470,15 +472,16 @@ position: relative;
 
 .products__subtitle {
   @extend %Acrom-Medium;
-   font-size: 24px;
-     line-height: 29px;
+  font-size: 24px;
+  line-height: 29px;
   transition: all .5s
 }
-.products__subtitle-mini{
+
+.products__subtitle-mini {
   @extend %Acrom-Medium;
-    font-size: 20px;
-      line-height: 24px;
-   transition: all .5s
+  font-size: 20px;
+  line-height: 24px;
+  transition: all .5s
 }
 
 // end section products
@@ -487,31 +490,35 @@ position: relative;
 
 // start section company
 
-.company__wrapper{
+.company__wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.company__box{
+
+.company__box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 850px;
   width: 100%;
 }
-.company__inner{
+
+.company__inner {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
   margin-bottom: 50px;
 }
-.company__item{
+
+.company__item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.company__inners{
+
+.company__inners {
   padding-left: 130px;
   max-width: 300px;
   width: 100%;
@@ -528,6 +535,54 @@ position: relative;
 // end section company
 
 
+// start section feedback
+.feedback{
+  background-color: $light-blue;
+}
+.feedback__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 610px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+}
+
+.feedback__item {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid $blue;
+  width: 100%;
+ max-width: 295px;
+ width: 100%;
+   font-size: 16px;
+   line-height: 28px;
+   color: #BBBBBB;
+   text-transform: uppercase;
+}
+
+.feedback__items {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid $blue;
+  width: 100%;
+  max-width: 295px;
+  width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+    color: #BBBBBB;
+    text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+// end section feedback
 
 
 
