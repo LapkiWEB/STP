@@ -718,7 +718,34 @@
 
 // end section address
 
+// start section error
+.error{
+  margin-top: 79px;
+  background-color: $light-blue;
+  text-align: center;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+.error__title{
+@extend %Acrom-Medium;
+font-size: 64px;
+line-height: 77px;
+color: $blue;
+margin-bottom: 30px;
+text-transform: uppercase;
+}
+.error__text{
+  @extend %Acrom-Regular;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
 
+// end section error
 
 
 
