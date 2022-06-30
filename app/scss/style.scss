@@ -6,16 +6,20 @@
 // start header
 .header {
   padding: 15px;
-  max-width: 1756px;
+  // max-width: 1756px;
   margin: 0 auto;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: $background;
+  z-index: 10;
 }
 
 .header__wrapper {
+  max-width: 1756px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -166,6 +170,9 @@
 
 
 // start section screen
+.screen{
+  margin-top: 79px;
+}
 .screen__wrapper {
   display: flex;
   justify-content: space-between;
