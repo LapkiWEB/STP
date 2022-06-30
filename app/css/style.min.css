@@ -1,4 +1,4 @@
-.error__text, .address__name, .start__title, .about__subtitle, .numbers__text, .screen__title, .subtitle, .title, html,
+.management__text, .management__name-dsecr, .error__text, .address__name, .start__title, .about__subtitle, .numbers__text, .screen__title, .subtitle, .title, html,
 body {
   font-family: "Acrom", sans-serif;
   font-weight: normal;
@@ -6,7 +6,7 @@ body {
   display: swap;
 }
 
-.error__title, .products__subtitle-mini, .products__subtitle {
+.management__title, .management__name, .error__title, .products__subtitle-mini, .products__subtitle {
   font-family: "Acrom", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1031,6 +1031,47 @@ body {
   margin-bottom: 50px;
 }
 
+.management__item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.management__img {
+  width: 440px;
+  height: 470px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  margin-left: auto;
+}
+
+.management__info {
+  width: 100%;
+  padding-left: 470px;
+}
+
+.management__name {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 30px;
+}
+
+.management__name-dsecr {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 50px;
+}
+
+.management__title {
+  margin-bottom: 15px;
+}
+
+.management__text {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1600px) {
   .address__map {
     max-width: -webkit-fit-content;
@@ -1242,6 +1283,17 @@ body {
     font-size: 32px;
     line-height: 38px;
   }
+  .management__img {
+    width: 370px;
+    height: 395px;
+  }
+  .management__info {
+    padding-left: 0;
+  }
+  .management__box {
+    height: 425px;
+    padding-left: 400px;
+  }
 }
 @media (max-width: 1200px) {
   .screen__wrapper {
@@ -1416,6 +1468,14 @@ body {
     font-size: 20px;
     line-height: 24px;
   }
+  .management__img {
+    width: 291px;
+    height: 310px;
+  }
+  .management__box {
+    height: 340px;
+    padding-left: 319px;
+  }
 }
 @media (max-width: 700px) {
   .header__right {
@@ -1535,6 +1595,14 @@ body {
   .start {
     height: 330px;
   }
+  .management__img {
+    width: 228px;
+    height: 242px;
+  }
+  .management__box {
+    height: 272px;
+    padding-left: 258px;
+  }
 }
 @media (max-width: 550px) {
   .screen__wrapper {
@@ -1623,6 +1691,26 @@ body {
   }
   .start {
     height: 220px;
+  }
+  .management__img {
+    width: 180px;
+    height: 190px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .management__box {
+    height: auto;
+    padding-top: 210px;
+    padding-left: 0px;
+  }
+  .management__name {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .management__name-dsecr {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 380px) {
