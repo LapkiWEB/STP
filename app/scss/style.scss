@@ -675,7 +675,48 @@
 
 // end section start
 
+// start section address
+.address__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.address__item{
+  // width: fit-content;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+.address__name{
+  @extend %Acrom-Regular;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 22px;
 
+}
+.address__phone,
+.address__email {
+   @extend %Acrom-Bold;
+  margin-bottom: 20px;
+  color: $blue;
+   font-size: 18px;
+   line-height: 22px;
+   display: block;
+}
+
+.address__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address__map{
+  max-width: 1200px;
+  width: 100%;
+  height: 260px;
+  padding-left: 20px;
+}
+
+
+
+// end section address
 
 
 
