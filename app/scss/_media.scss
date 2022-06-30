@@ -258,6 +258,16 @@
   .company__item {
     padding: 0 15px;
   }
+
+  .footer__logo {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer__wrapper {
+    flex-wrap: wrap;
+
+  }
 }
 
 @media(max-width: 1000px) {
@@ -339,6 +349,10 @@
     width: fit-content;
   }
 
+  .footer__inner {
+    display: block;
+    max-width: 150px;
+  }
 }
 
 @media(max-width: 800px) {
@@ -357,6 +371,11 @@
 
   .screen__wrapper {
     height: 300px;
+  }
+
+  .footer__contacts {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -380,7 +399,9 @@
   .numbers__item {
     margin-bottom: 30px;
   }
-
+  .about__left{
+    padding-right: 0;
+  }
   .about__right {
     display: none;
   }
@@ -420,16 +441,19 @@
   .products__bg {
     padding: 10px;
   }
+
   .company__inner {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .company__item{
+
+  .company__item {
     max-width: 170px;
     width: 100%;
     margin-bottom: 50px;
   }
-  .company__items{
+
+  .company__items {
     max-width: 150px;
     width: 100%;
     padding-left: 0;
@@ -441,16 +465,36 @@
     max-width: 100%;
     max-width: 100%;
   }
-  .feedback__inner{
+
+  .feedback__inner {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .feedback__box{
+
+  .feedback__box {
 
     text-align: center;
   }
-  .feedback__item{
+
+  .feedback__item {
     max-width: 295px;
+  }
+}
+
+@media(max-width: 600px) {
+  .footer__wrapper {
+    justify-content: center;
+  }
+.footer__info{
+  order: 1;
+}
+  .footer__inner {
+    max-width: 350px;
+    margin-bottom: 30px;
+  }
+  .footer__contacts{
+    max-width: 370px;
+    margin-bottom: 30px;
   }
 }
 
@@ -508,15 +552,18 @@
     font-size: 16px;
     line-height: 19px;
   }
-    .company__item {
-      max-width: 550px;
-    }
-    .company__inner{
-      margin-bottom: 0;
-    }
-    .company__inners{
-      padding-left: 0;
-    }
+
+  .company__item {
+    max-width: 550px;
+  }
+
+  .company__inner {
+    margin-bottom: 0;
+  }
+
+  .company__inners {
+    padding-left: 0;
+  }
 
 }
 
@@ -526,6 +573,18 @@
     font-size: 14px;
     line-height: 22px;
     padding-left: 8px;
+  }
+  .footer__wrapper{
+    justify-content: flex-start;
+  }
+  .footer__contacts{
+    max-width: 350px;
+  }
+  .footer__phone,
+  .footer__email {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 0px;
   }
 }
 

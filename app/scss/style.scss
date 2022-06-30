@@ -574,6 +574,7 @@
     line-height: 18px;
     color: #BBBBBB;
     text-transform: uppercase;
+    resize: none;
 
   &:last-child {
     margin-bottom: 15px;
@@ -584,6 +585,56 @@
 
 // end section feedback
 
+
+
+// start footer
+.footer{
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer__wrapper{
+   display: flex;
+   justify-content: space-between;
+}
+.footer__info-text{
+  margin-bottom: 20px;
+}
+.footer__info-politics,
+.footer__info-lapki {
+  display: block;
+  margin-bottom: 20px;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+  transition: all .3s;
+  &:hover{
+    border-bottom: 1px solid $blue;
+  }
+}
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+}
+.footer__menu-list{
+  margin-bottom: 20px;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+  transition: all .3s;
+  &:hover {
+    border-bottom: 1px solid $blue;
+  }
+}
+.footer__phone,
+.footer__email {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+
+
+// end footer
 
 
 
