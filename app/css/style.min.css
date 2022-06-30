@@ -6,7 +6,7 @@ body {
   display: swap;
 }
 
-.management__title, .management__name, .error__title, .products__subtitle-mini, .products__subtitle {
+.partners__name, .management__title, .management__name, .error__title, .products__subtitle-mini, .products__subtitle {
   font-family: "Acrom", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -946,6 +946,7 @@ body {
   line-height: 58px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .start__suptitle {
@@ -1069,6 +1070,79 @@ body {
 }
 
 .management__text {
+  margin-bottom: 30px;
+}
+
+.partners__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.partners__item {
+  padding: 90px 60px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 15px;
+}
+.partners__item:hover {
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.partners__item-logo img {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.partners__name {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.partners__text {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.partners__box {
+  margin-bottom: 30px;
+}
+
+.partners__list {
+  margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+  padding-left: 15px;
+}
+.partners__list::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #000;
+  top: 9px;
+  left: 0;
+}
+
+.partners__btn {
   margin-bottom: 30px;
 }
 
@@ -1293,6 +1367,10 @@ body {
   .management__box {
     height: 425px;
     padding-left: 400px;
+  }
+  .partners__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 1200px) {
@@ -1689,9 +1767,6 @@ body {
     margin-bottom: 20px;
     padding-left: 0px;
   }
-  .start {
-    height: 220px;
-  }
   .management__img {
     width: 180px;
     height: 190px;
@@ -1714,6 +1789,9 @@ body {
   }
 }
 @media (max-width: 380px) {
+  .start {
+    height: 400px;
+  }
   .logo {
     width: 90px;
     height: 30px;

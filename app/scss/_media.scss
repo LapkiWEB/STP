@@ -275,6 +275,9 @@
     height: 425px;
     padding-left: 400px;
   }
+  .partners__inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media(max-width: 1200px) {
@@ -741,9 +744,7 @@
     padding-left: 0px;
   }
 
-  .start {
-    height: 220px;
-  }
+
    .management__img {
      width: 180px;
      height: 190px;
@@ -768,6 +769,9 @@
 }
 
 @media(max-width: 380px) {
+    .start {
+      height: 400px;
+    }
   .logo {
     width: 90px;
     height: 30px;
