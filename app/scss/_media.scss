@@ -174,7 +174,20 @@
     font-size: 20px;
     line-height: 24px;
   }
-
+  .start__title{
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .start__suptitle{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .start__wrapper{
+    padding: 10px 15px 15px;
+  }
+  .start{
+    height: 370px;
+  }
   .text {
     font-size: 16px;
     line-height: 19px;
@@ -262,6 +275,10 @@
   .footer__logo {
     width: 100%;
     margin-bottom: 50px;
+    img{
+      width: 120px;
+      height: 40px;
+    }
   }
 
   .footer__wrapper {
@@ -496,6 +513,9 @@
     max-width: 370px;
     margin-bottom: 30px;
   }
+  .start{
+    height: 330px;
+  }
 }
 
 @media(max-width: 550px) {
@@ -586,12 +606,21 @@
     margin-bottom: 20px;
     padding-left: 0px;
   }
+  .start {
+    height: 220px;
+  }
 }
 
 @media(max-width: 380px) {
   .logo {
     width: 90px;
     height: 30px;
+  }
+  .footer__logo{
+    img{
+      width: 90px;
+      height: 30px;
+    }
   }
 
   .numbers__numbers {
