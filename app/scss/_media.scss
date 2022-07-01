@@ -506,6 +506,10 @@
     height: 340px;
     padding-left: 319px;
   }
+  .politics__title{
+    font-size: 28px;
+    line-height: 30px;
+  }
 }
 
 @media(max-width: 700px) {
@@ -781,6 +785,11 @@
 
   .management__name-dsecr {
     margin-bottom: 30px;
+  }
+  .politics__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 30px;
   }
 }
 
