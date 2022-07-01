@@ -83,7 +83,7 @@
   .menu__list-hover {
     border: none;
     padding-right: 17px;
-
+    // width: 170px;
     &::before {
       position: absolute;
       content: "";
@@ -99,9 +99,9 @@
 
     &:hover {
       border: none;
-
-      .sub-menu.active {
-        display: block;
+      .sub-menu {
+        display: none;
+        // width: fit-content;
       }
     }
   }
@@ -109,9 +109,13 @@
   .sub-menu {
     position: static;
     height: auto;
+    display: none;
+    padding-right: 0 !important;
     padding-top: 15px !important;
     background-color: #fff;
+    width: 15px;
   }
+
 
 
   .social-mob {

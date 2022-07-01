@@ -359,6 +359,19 @@ body {
   background-position: center;
 }
 
+.arrows {
+  position: absolute;
+  content: "";
+  top: 7px;
+  right: -17px;
+  width: 12px;
+  height: 7px;
+  background-image: url("../images/icons/arrows__bottom.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .sub-menu {
   position: absolute;
   top: 24px;
@@ -1298,14 +1311,17 @@ body {
   .menu__list-hover:hover {
     border: none;
   }
-  .menu__list-hover:hover .sub-menu.active {
-    display: block;
+  .menu__list-hover:hover .sub-menu {
+    display: none;
   }
   .sub-menu {
     position: static;
     height: auto;
+    display: none;
+    padding-right: 0 !important;
     padding-top: 15px !important;
     background-color: #fff;
+    width: 15px;
   }
   .social-mob {
     display: block;
