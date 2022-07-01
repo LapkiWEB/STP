@@ -915,13 +915,37 @@
 // end section projects
 
 
+// start section politics
+.politics{
+  margin-top: 79px;
+}
+.politics__title{
+  padding-top: 50px;
+  @extend %Acrom-Regular;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.politics__subtitle{
+  margin-bottom: 15px;
+}
+.politics__text{
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+// end section politics
 
 
 
 
-
-
-
+// <h3 class="politics__subtitle subtitle">
+// <p class="politics__text text">
+//  <br>
 
 
 
