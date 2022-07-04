@@ -39,7 +39,6 @@ function images() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.min.js',
     'app/js/main.js'
   ])
    .pipe(concat('main.min.js'))
