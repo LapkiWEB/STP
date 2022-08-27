@@ -1211,6 +1211,10 @@ margin-bottom: 5px;
   }
 }
 
+// .partners__wrapper-links{
+//   display: flex;
+//   justify-content: center;
+// }
 .work__social{
   width: 250px;
   margin-bottom: 20px;
@@ -1224,8 +1228,14 @@ margin-bottom: 5px;
   }
 }
 
+.work__text{
+  text-align: center;
 
-
+  width: 100%;
+}
+.work__text-link{
+  color: $blue;
+}
 
 
 @import 'media';
