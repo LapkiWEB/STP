@@ -9,9 +9,10 @@ body {
   background-color: $background;
   font-size: 18px;
   line-height: 20px;
-  
-  
+
+
 }
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -62,11 +63,13 @@ body {
   margin-bottom: 50px;
   max-width: fit-content;
 }
-.subtitle{
+
+.subtitle {
   @extend %Acrom-Regular;
   font-size: 21px;
   line-height: 25px;
 }
+
 .section {
   padding: 50px 100px;
 }
@@ -82,14 +85,16 @@ body {
   color: #fff;
   text-transform: uppercase;
   transition: all .3s;
-   border: 1px solid $blue;
-  &:hover{
+  border: 1px solid $blue;
+
+  &:hover {
     color: $blue;
     background-color: #fff;
     border: 1px solid $blue;
   }
 }
-.main__btn-wrapper{
+
+.main__btn-wrapper {
   text-align: center;
   width: 100%;
 }
@@ -154,3 +159,13 @@ body {
 }
 
 // ФИНИШ МЕНЮШКА ПРИ АДАПТИВЕ
+
+
+
+
+
+
+
+
+
+

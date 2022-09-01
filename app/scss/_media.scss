@@ -1,12 +1,20 @@
 @media(max-height: 900px) {
+ 
   .screen__wrapper{
-    height: 500px;
+    height: 400px;
+   
       &::before {
-           width: 500px;
-           height: 500px;
+           width: 400px;
+           height: 400px;
       }
   }
-
+  .screen__left{
+    max-width: 700px;
+  }
+  .screen__right{
+    max-width: 550px;
+    margin-right: 115px;
+  }
 }
 
 
@@ -176,10 +184,10 @@
   }
 
   .screen__wrapper {
-    height: 500px;
+    height: 450px;
     &:before{
-      width: 500px;
-      height: 500px;
+      width: 450px;
+      height: 450px;
     }
   }
 
@@ -212,6 +220,11 @@
 }
 
 @media(max-width: 1300px) {
+  @media(max-height: 900px) {
+    .screen__right {
+      margin-right: 0;
+    }
+  }
   .partners__item{
     max-width: 1000px;
     width: 100%;
@@ -318,6 +331,8 @@
 }
 
 @media(max-width: 1200px) {
+  
+  
   .section{
     padding-left: 0;
     padding-right: 0;

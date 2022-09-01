@@ -54,6 +54,29 @@ closePopUp1.addEventListener('click', () =>{
 })
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const openPopUp2 = document.getElementById('modal2');
 const closePopUp2 = document.getElementById('pop_up_close2');
 const popUp2 = document.getElementById('pop_up2');
